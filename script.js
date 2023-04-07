@@ -1,10 +1,11 @@
 import { WORDS } from "./words.js";
+import { MYWORD } from "./myword.js";
 
 const NUMBER_OF_GUESSES = 6;
 let guessesRemaining = NUMBER_OF_GUESSES;
 let currentGuess = [];
 let nextLetter = 0;
-let rightGuessString = WORDS[Math.floor(Math.random() * WORDS.length)];
+let rightGuessString = MYWORD[Math.floor(Math.random() * MYWORD.length)];
 
 console.log(rightGuessString);
 

@@ -1,4 +1,5 @@
 export const WORDS = [
+  "wifed",
   "roate",
   "sulci",
   "which",

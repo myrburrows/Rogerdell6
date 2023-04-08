@@ -8,7 +8,10 @@ let nextLetter = 0;
 let rightGuessString = MYWORD[Math.floor(Math.random() * MYWORD.length)];
 
 console.log(rightGuessString);
+<<<<<<< HEAD
 debugger;
+=======
+>>>>>>> ac4029988dea14ab3b1024270f4a152c2280a967
 
 function initBoard() {
   let board = document.getElementById("game-board");

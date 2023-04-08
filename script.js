@@ -62,7 +62,7 @@ function checkGuess() {
     guessString += val;
   }
 
-  if (guessString.length != 5) {
+  if (guessString.length != 6) {
     toastr.error("Not enough letters!");
     return;
   }
@@ -72,10 +72,10 @@ function checkGuess() {
     return;
   }
 
-  var letterColor = ["gray", "gray", "gray", "gray", "gray"];
+  var letterColor = ["gray", "gray", "gray", "gray", "gray", "gray"];
 
   //check green
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 6; i++) {
     if (rightGuess[i] == currentGuess[i]) {
       letterColor[i] = "green";
       rightGuess[i] = "#";
@@ -84,11 +84,11 @@ function checkGuess() {
 
   //check yellow
   //checking guess letters
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 6; i++) {
     if (letterColor[i] == "green") continue;
 
     //checking right letters
-    for (let j = 0; j < 5; j++) {
+    for (let j = 0; j < 6; j++) {
       if (rightGuess[j] == currentGuess[i]) {
         letterColor[i] = "yellow";
         rightGuess[j] = "#";
@@ -96,7 +96,7 @@ function checkGuess() {
     }
   }
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 6; i++) {
     let box = row.children[i];
     let delay = 250 * i;
     setTimeout(() => {
@@ -125,7 +125,7 @@ function checkGuess() {
 }
 
 function insertLetter(pressedKey) {
-  if (nextLetter === 5) {
+  if (nextLetter === 6) {
     return;
   }
   pressedKey = pressedKey.toLowerCase();

@@ -2589,6 +2589,7 @@ export const WORDS = [
 "mummer",
 "murder",
 "murmur",
+"murphy",
 "muscat",
 "muscle",
 "museum",
